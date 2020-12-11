@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    Storage::disk('google')->put('hello.txt', 'Hello world');
+
     return view('welcome');
 });
 
