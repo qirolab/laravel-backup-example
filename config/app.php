@@ -174,6 +174,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\GoogleDriveServiceProvider::class,
+        App\Providers\DropboxServiceProvider::class,
     ],
 
     /*

@@ -83,6 +83,11 @@ return [
             'refreshToken' => env('GOOGLE_DRIVE_REFRESH_TOKEN'),
             'folderId' => env('GOOGLE_DRIVE_BACKUP_FOLDER_ID'),
         ],
+
+        'dropbox' => [
+            'driver' => 'dropbox',
+            'authorization_token' => env('DROPBOX_AUTH_TOKEN'),
+        ],
     ],
 
     /*

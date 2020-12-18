@@ -16,6 +16,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "nao-pon/flysystem-google-drive": "~1.1",
+        "spatie/flysystem-dropbox": "^1.2",
         "spatie/laravel-backup": "^6.13"
     },
     "require-dev": {
