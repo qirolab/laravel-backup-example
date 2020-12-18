@@ -1,12 +1,12 @@
-# Laravel Fortify Example
-Laravel Authentication Scaffold using Laravel Fortify and Bootstrap.
+# Laravel Backup Example
+This example repository shows, how to store Laravel backups on local storage,
+Google Drive, and Dropbox.
 
 
 ## Video Tutorials
-1. [Authentication Scaffolding Using Laravel Fortify](https://www.youtube.com/watch?v=CLsyHP7x0N0)
-2. [Forget Password & User Profile Update with Laravel Fortify](https://www.youtube.com/watch?v=NTc5FXmnWYc)
-3. [Email Verification using Laravel Fortify](https://www.youtube.com/watch?v=X0ebWjcQ-uc)
-4. [Two Factor Authentication (2FA) with Laravel Fortify](https://www.youtube.com/watch?v=rDCqS277dVQ)
+1. [Set up Automatic DB Backup in Laravel](https://www.youtube.com/watch?v=tKu7EqGgu_A)
+2. [Store Automatic Laravel Backup On Google Drive](https://www.youtube.com/watch?v=6kxXkrlRuJU)
+3. [Store Automatic Laravel Backup On Dropbox](https://www.youtube.com/watch?v=hgcg8vDFJq0)
 
 
 ## How To Use This?
@@ -31,4 +31,33 @@ $ php artisan key:generate
 
 # run migration
 $ php artisan migrate
+```
+
+## Configuration for Google drive
+For Google drive backup, you need to provide these following variables in the `.env` file.
+
+```
+GOOGLE_DRIVE_CLIENT_ID=xxx.apps.googleusercontent.com
+GOOGLE_DRIVE_CLIENT_SECRET=xxx
+GOOGLE_DRIVE_REFRESH_TOKEN=xxx
+GOOGLE_DRIVE_FOLDER_ID=null
+```
+
+To get the values for all these environment variables follow the steps mentioned
+this article:
+- **[Setup Laravel Backup On Google Drive](https://qirolab.com/posts/how-to-setup-laravel-backup-on-google-drive-1607368130)**
+
+## Configuration for Dropbox
+For Dropbox, add the following variable in the `.env` file.
+
+```
+DROPBOX_AUTH_TOKEN=xxx
+```
+Follow the steps on this article to get its value:
+
+- **[Store Laravel backup on Dropbox](https://qirolab.com/posts/how-to-store-laravel-backup-on-dropbox-1607451784)**
+
+## Take backups
+```
+php artisan backup:run
 ```
