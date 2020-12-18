@@ -13,7 +13,7 @@ Google Drive, and Dropbox.
 
 Download or clone this repo
 ```shell
-$ git clone https://github.com/qirolab/laravel-fortify-example.git
+$ git clone https://github.com/qirolab/laravel-backup-example.git
 ```
 
 Install all dependency required by Laravel.
